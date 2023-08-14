@@ -4,7 +4,7 @@ import robo from "../assets/robo.png"
 const Home = () => {
   return (
    <>
-    <section className="py-0 md:py-0 btn w-[90vw] h-full m-auto rounded-xl text-white">
+    <section className="py-0 md:py-0 btn w-[90vw] h-full m-auto rounded-xl text-white mt-12">
 	<div className="container p-6 mx-auto space-y-8">
 		<div className="w-[90%] h-full m-auto grid grid-cols-1  gap-x-10 gap-y-8 md:grid-cols-2 ">
 			{/* First card */}

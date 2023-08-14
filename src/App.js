@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import Home from './components/Home';
 import Events from './components/Events';
 import Updates from './components/Updates';
-import Gallery from './components/Updates';
+import Gallery from './components/Gallery';
 import Teams from './components/Teams';
 
 function App() {

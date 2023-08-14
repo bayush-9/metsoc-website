@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
 import logo from "../assets/logo.png"
-import { useAuth0 } from "@auth0/auth0-react";
-
-
 import IonIcon from '@reacticons/ionicons';
+
 const Navbar = () => {
-  const { loginWithPopup } = useAuth0();
-  const { logout } = useAuth0();
-  const { user, isAuthenticated} = useAuth0();
   const [open, setOpen] = useState(false);
   return (
     <nav className="sticky top-0 bg-white z-20">
@@ -28,7 +23,7 @@ const Navbar = () => {
           </li>
           <li>
             <a href="/Events" className="py-7  hover:text-berry active:text-berry px-3 font-medium tracking-wider inline-block">
-              Event
+              Events
             </a>
           </li>
           <li>
@@ -50,27 +45,6 @@ const Navbar = () => {
         </ul></div>
         <div className='flex space-x-4'>
           
-        {
-            isAuthenticated ? (
-            
-              <button class="bg-berry  text-white font-bold py-2 rounded px-4 focus:bg-mauve " onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-          Logout
-        </button>
-             
-            ) : (
-              <button class="bg-berry text-white font-bold py-2 px-4 rounded mr-2 focus:bg-mauve " onClick={() => loginWithPopup()}>SignUp</button>
-              
-              )
-          }
-
-{ isAuthenticated && 
- (<div class="dropdown relative profile">
-    <a class="dropdown-toggle flex items-center hidden-arrow" href="/" id="dropdownMenuButton2" role="button"
-      data-bs-toggle="dropdown" aria-expanded="false">
-      <img class="rounded-full border-berry border-2" src={user.picture} alt={user.name} loading="lazy" height={40} width={40}/>
-    </a>
-  </div>)
-  }
     </div>   
     
         <ul
@@ -86,31 +60,28 @@ const Navbar = () => {
             </a>
           </li>
           <li >
-            <a href="/about" className="py-7 px-3 inline-block">
-             Careers
+            <a href="/events" className="py-7 px-3 inline-block">
+             Events
             </a>
           </li>
           <li >
-            <a href="/departments" className="py-7 px-3 inline-block">
-              Blog
+            <a href="/updates" className="py-7 px-3 inline-block">
+              Updates
             </a>
           </li>
           <li >
-            <a href="/doctors" className="py-7 px-3 inline-block">
-              Career Guidance
+            <a href="/gallery" className="py-7 px-3 inline-block">
+              Gallery
+            </a>
+          </li>
+          <li >
+            <a href="/teams" className="py-7 px-3 inline-block">
+              Teams
             </a>
           </li>
           
           </div>
         </ul>
-        { isAuthenticated && 
- (<div class="dropdown relative md:hidden ml-2 mr-2 ">
-    <a class="dropdown-toggle flex items-center hidden-arrow" href="/" id="dropdownMenuButton2" role="button"
-      data-bs-toggle="dropdown" aria-expanded="false">
-      <img class="rounded-full border-berry border-2" src={user.picture} alt={user.name} loading="lazy" height={50} width={50}/>
-    </a>
-  </div>)
-  }
       </div>
     </nav>
   );
