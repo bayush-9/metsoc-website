@@ -1,22 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Hero from './components/Hero';
+import Home from './components/Home';
+import Events from './components/Events';
+import Updates from './components/Updates';
+import Gallery from './components/Updates';
+import Teams from './components/Teams';
 
 function App() {
   return (
-    <div className="App">
-       <header className="top-nav">
-        <nav>
-          <ul className="nav-list">
-            <li><a href="/">Home</a></li>
-            <li><a href="/events">Events</a></li>
-            <li><a href="/teams">Teams</a></li>
-            <li><a href="/updates">Updates</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-          </ul>
-        </nav>
-      </header>
-      {/* Other content of your app */}
-    </div>
+    <Routes>
+      <Route index element={<Home />} />
+        <Route path="/" element={<Hero />} />
+        <Route path="/events" element={<Events/>} />
+        <Route path="/updates" element={<Updates/>} />
+        <Route path="/gallery" element={<Gallery/>} />
+        <Route path="/teams" element={<Teams/>} />
+       
+      </Routes>
+     
+   
   );
 }
 

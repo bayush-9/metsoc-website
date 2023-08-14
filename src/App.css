@@ -24,3 +24,44 @@
   text-decoration: none;
   color: #fff;
 }
+.nav-links ul li a::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #A45693;
+  display: block;
+  margin: auto;
+  transition: .5s;
+}
+.nav-links ul li a:hover::after{
+  width: 100%;
+
+}
+.nav-links li a::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  margin: auto;
+  transition: .5s;
+}
+.nav-links li a:hover::after{
+  width: 100%;
+
+}
+@media screen and (max-width: 1024px) {
+  .products, .useful{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .profile{
+    display: none;
+    
+  }
+}
+.btn{
+  background-color: transparent;
+  background-image: linear-gradient(to right,#5961F9 0%,  #EE9AE5  100%);
+}
