@@ -7,6 +7,8 @@ module.exports = {
 	theme: {
 		colors: {
 			berry: '#A45693',
+			purple:'#9d6eda',
+			offwhite:'#d7d9db',
 			blush: '#F1E9EE',
 			black: '#000000',
 			mauve: '#C092B2',
@@ -23,6 +25,18 @@ module.exports = {
 				poppins: ['Poppins', 'sans-serif'],
 				montserrat: ['Montserrat', 'sans-serif'],
 			},
+			spacing:{
+				'2': '8px',
+			},
+			textAlign: {
+				left: 'left',
+				center: 'center',
+				right: 'right',
+				justify: 'justify',
+			  },
+			  flexDirection: {
+				'col': 'column',
+			  },
 		},
 	},
 	plugins: [],
