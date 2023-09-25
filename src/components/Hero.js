@@ -40,7 +40,6 @@ const Home = () => {
 			<article className="flex flex-col  bg-darkwhite2 rounded-xl">
       <div className="flex flex-col flex-1 p-0 text-center ">
 				<p className='m-auto text-[50px] sm:text-[75px] font-bold'>
-       
         </p>
 				</div>
 			</article>
