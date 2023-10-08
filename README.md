@@ -82,5 +82,5 @@ npm start
 
 ## Additional Resources
 
-- [METSOC Official Website](https://metsoc-website.vercel.app/) (if available)
+- [METSOC Official Website](https://metsoc-website.vercel.app/)
 - [React Style Guide](https://react.dev/)
