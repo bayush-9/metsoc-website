@@ -22,7 +22,7 @@ Welcome to the METSOC (Metallurgy Society) GitHub repository! This repository is
 
 The Metallurgy Society (METSOC) is a student body affiliated with the Department of Metallurgical Engineering at IIT(BHU), Varanasi. METSOC plays a crucial role in fostering student-professor involvement within the department and organizing inter-branch activities.
 
-For more information about METSOC and its initiatives, please visit [METSOC Official Website](https://github.com/bayush-9/metsoc-website/issues) (if available).
+For more information about METSOC and its initiatives, please visit [METSOC Official Website](https://metsoc-website.vercel.app/).
 
 ## Contribution Guidelines
 
@@ -43,7 +43,7 @@ We follow the [React Style Guide](https://react.dev/) for writing code in this p
 
 ### Reporting Issues
 
-If you encounter any bugs or issues while using the METSOC project, please report them on the [GitHub Issues](#insert-issues-link-here) page.
+If you encounter any bugs or issues while using the METSOC project, please report them on the [GitHub Issues](https://github.com/bayush-9/metsoc-website/issues) page.
 
 ## Project Setup
 
